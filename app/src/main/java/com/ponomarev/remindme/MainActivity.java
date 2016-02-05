@@ -6,7 +6,7 @@ import android.os.Bundle;
 import com.example.ponomarev.remindme.R;
 
 /**
- * Created by ponomarev on 05.02.2016.
+ * Created by ponomarev on 05.02.2016
  */
 public class MainActivity extends Activity{
 
