@@ -1,6 +1,5 @@
 package com.ponomarev.remindme;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -12,7 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 import com.example.ponomarev.remindme.R;
-import com.ponomarev.remindme.adapter.TabsPagerFragmentAdapter;
+import com.ponomarev.remindme.adapter.TabsFragmentAdapter;
 
 /**
  * Created by ponomarev on 05.02.2016
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity{
 
     private void initTabs() {
         viewPager = (ViewPager)findViewById(R.id.viewPager);
-        TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(getSupportFragmentManager());
+        TabsFragmentAdapter adapter = new TabsFragmentAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tabLayout);
