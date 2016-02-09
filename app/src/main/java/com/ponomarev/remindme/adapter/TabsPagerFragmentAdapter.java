@@ -32,13 +32,11 @@ public class TabsPagerFragmentAdapter extends FragmentPagerAdapter{
 
         switch (position){
             case 0:
-                //return ExampleFragment.getInstance();
-                break;
+                return ExampleFragment.getInstance();
             case 1:
-                //return ExampleFragment.getInstance();
-                break;
+                return ExampleFragment.getInstance();
             case 2:
-                break;
+                return ExampleFragment.getInstance();
             default:
 
         }
