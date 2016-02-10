@@ -22,7 +22,7 @@ public class HistoryFragment extends AbstractTabFragment{
         TodoFragment fragment = new TodoFragment();
         fragment.setArguments(args);
         fragment.setContext(context);
-        fragment.setTitle(context.getString(R.string.menu_item_todo));
+        fragment.setTitle(context.getString(R.string.menu_item_history));
         return fragment;
     }
 

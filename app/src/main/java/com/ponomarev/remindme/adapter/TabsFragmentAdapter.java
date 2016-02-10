@@ -12,6 +12,7 @@ import com.ponomarev.remindme.fragment.HistoryFragment;
 import com.ponomarev.remindme.fragment.IdeasFragment;
 import com.ponomarev.remindme.fragment.TodoFragment;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -46,6 +47,7 @@ public class TabsFragmentAdapter extends FragmentPagerAdapter{
     }
 
     private void initTabMaps(Context context) {
+        tabs = new HashMap<>();
         tabs.put(0, HistoryFragment.getInstance(context));
         tabs.put(1, IdeasFragment.getInstance(context));
         tabs.put(2, TodoFragment.getInstance(context));
