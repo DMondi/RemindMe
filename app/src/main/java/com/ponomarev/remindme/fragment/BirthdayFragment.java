@@ -10,16 +10,13 @@ import android.view.ViewGroup;
 
 import com.example.ponomarev.remindme.R;
 
-/**
- * Created by ponomarev on 08.02.2016.
- */
 public class BirthdayFragment extends AbstractTabFragment{
 
     private static final int LAYOUT = R.layout.fragment_example;
 
-    public static TodoFragment getInstance(Context context){
+    public static BirthdayFragment getInstance(Context context){
         Bundle args = new Bundle();
-        TodoFragment fragment = new TodoFragment();
+        BirthdayFragment fragment = new BirthdayFragment();
         fragment.setArguments(args);
         fragment.setContext(context);
         fragment.setTitle(context.getString(R.string.menu_item_birthday));
